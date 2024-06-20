@@ -1,9 +1,0 @@
-CFLAGS=-Wall -Werror
-
-.PHONY: clean
-
-check16: check16.c imageprocessing.c bmp.c
-	gcc check16.c imageprocessing.c bmp.c $(CFLAGS) -o check16
-
-clean:
-	rm -f check16
